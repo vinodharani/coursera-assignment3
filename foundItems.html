@@ -1,0 +1,8 @@
+<div class="results">
+  <ul>
+    <li ng-repeat="item in foundItemsDirective.found">
+        {{ item.name }} - {{ item.short_name }} - {{ item.description }}
+        <button class="btn btn-primary" ng-click="foundItemsDirective.onRemove({indexArg: $index});">Don't want this one!</button>
+    </li>
+  </ul>
+</div>
